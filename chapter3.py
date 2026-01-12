@@ -49,3 +49,10 @@ print(name.removeprefix("jamiz")) # remove prefix
 print(name.removesuffix("qamar")) # remove suffix
 print(name.islower()) # check if all characters are lowercase
 print(name.isupper()) # check if all characters are uppercase
+
+
+name = "   jamiz\n qamar   " # string with whitespace
+print (name)
+
+name = "   jamiz \" qamar\"  " # string with escape character
+print (name)
