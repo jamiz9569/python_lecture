@@ -45,9 +45,14 @@ for i in range(1,num):
 print("The factorial of", num, "is", factorial)
 
 # question 7
+"""
+for n = 3
+    *
+   ***
+  *****
+ """
+num = int(input("Enter number of rows: "))
+for i in range (num):
+    print(" "*(num-i-1) + "*"*(2*i+1))
 
-
-
-
-   
-
+# question 8
