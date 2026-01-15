@@ -10,15 +10,17 @@ l = ["Harry", "Soham", "Sachin", "Rahul"]
 for name in l:
     if name.startswith("S"):
         print("Hello " + name)
-    else:
-        continue
+ #   else:
+  #      continue       # optional
 
 # question 3
 num = int(input("Enter a number: "))
 while i<11:
     print(i*num)
+    i += 1   # was missing from my solution 
 
 # question 4
+"""
 num = int(input("Enter a number: "))
 for i in range(2, num):
     if num>0 and num==1 or num==2 :
@@ -26,13 +28,27 @@ for i in range(2, num):
     elif num >2 and num%i==0:
       print("The number is prime")
     else:
-      print("The number is not prime")
+      print("The number is not prime")""
+"""
+num = int(input("Enter a number: "))
+if num <= 1:
+    print("Not prime")
+else:
+    is_prime = True
+    for i in range(2, num):
+        if num % i == 0:
+            is_prime = False
+            break
+    if is_prime:
+        print("Prime")
+    else:
+        print("Not prime")
 
 # question 5
 num = int(input("Enter a number: "))
 i = 1
 sum = 0
-while i<num:
+while i <= num:    # equall sign was missing from my solution
    sum += i
    i += 1
 print("The sum of numbers from 1 to", num, "is", sum)
@@ -40,7 +56,7 @@ print("The sum of numbers from 1 to", num, "is", sum)
 # question 6
 num = int(input("Enter a number: "))
 factorial = 1
-for i in range(1,num):
+for i in range(1,num+1):  # +1 was missing from my solution
     factorial = factorial*i
 print("The factorial of", num, "is", factorial)
 
