@@ -72,3 +72,21 @@ for i in range (num):
     print(" "*(num-i-1) + "*"*(2*i+1))
 
 # question 8
+num = int(input("Enter number of rows: "))
+for i in range (num ):
+    print("*" * (i+1 ))
+    
+#for i in range (num):        # no need for this loop
+ #   print (" " *( num-i+1))#
+    
+
+# question 9
+num = int(input("Enter number of rows: "))
+for i in range (num):
+    for j in range (num):
+        if i==0 or i==num-1 or j==0 or j==num-1:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+
