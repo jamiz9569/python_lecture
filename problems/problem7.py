@@ -90,3 +90,9 @@ for i in range (num):
             print(" ", end="")
     print()
 
+ # end="" tells Python what to print after the current output instead of a newline.
+ # By default, print() adds a newline character at the end of its output.
+#  print("*", end="")
+#  print("*", end="")
+#  print("*")
+# This will output: *** on the same line
