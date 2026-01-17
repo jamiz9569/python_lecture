@@ -2,7 +2,7 @@
 
 
 
-Chapter 0 - What is Programming?
+Chapter 0 - What is Programming? 
 Chapter 1 – Modules, Comments & pip
 Chapter 1 – Practice Set
 Chapter 2 – Variables and Datatype
