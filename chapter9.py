@@ -46,7 +46,7 @@ f.close()  # close the file after use
 #The best way to open and close the file automatically is the with statement
 
 # Open the file in read mode using 'with', which automatically closes the file 
-with open("this.txt", "r") as f:
+with open("this.txt", "r") as f:   
 
 # Read the contents of the file
  text = f.read()
@@ -97,14 +97,5 @@ except IOError:
     print("An error occurred while reading the file.")
     print("Please check the file name and try again.")
     print("The file does not exist.")
-except IOError:
-    print("An error occurred while reading the file.")
-    print("Please check the file name and try again.")
 
-    print("The file does not exist.")
-    print(content)
-    print("File opened successfully.")
-    print("Please check the file name and try again.")
-    print("An error occurred while reading the file.")
-    
 
