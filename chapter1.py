@@ -1,4 +1,4 @@
-# modules , comments and pip in chapter 1
+# modules , comments and pip 
 # using pip install (module name) we can install modules and packages 
 
 
