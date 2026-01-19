@@ -98,4 +98,4 @@ except IOError:
     print("Please check the file name and try again.")
     print("The file does not exist.")
 
-#these re very importnt to hndle files 
+#these re very importnt to handle files 
