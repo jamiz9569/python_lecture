@@ -7,6 +7,13 @@
 Object-oriented programming (OOP) is a programming paradigm that uses "objects" to represent data and methods to manipulate that data.
 It is based on several key concepts including classes, objects, inheritance, encapsulation, and polymorphism.
 """
+
+"""
+__INIT__() CONSTRUCTOR
+__init__() is a special method which is first run as soon as the object is created.
+__init__() method is also known as constructor.
+It takes ‘self’ argument and can also take further arguments
+"""
 # Defining a class
 class Dog:
     # Constructor
@@ -120,4 +127,50 @@ bessie = Cow()
 animal_sound(sparrow)  # Output: Chirp Chirp
 animal_sound(bessie)   # Output: Moo Moo
 
-#
+#CLASS ATTRIBUTES
+# An attribute that belongs to the class rather than a particular object
+
+class Employee:
+ company = "Google" # Specific to Each Class
+harry = Employee() # Object Instatiation
+harry.company
+Employee.company = "YouTube" # Changing Class Attribute
+print(harry.company) # Output: YouTube
+
+# STATIC METHODS
+# A method that belongs to the class rather than any object of the class
+class Math:
+ @staticmethod
+ def add(x, y):
+    return x + y
+print(Math.add(5, 10)) # Output: 15
+
+# INSTANCE ATTRIBUTES
+# An attribute that belongs to the Instance (object). Assuming the class from the previous example:
+harry.name = "harry"
+harry.salary = "30k" # Adding instance attribute
+
+
+"""
+SELF PARAMETER
+self refers to the instance of the class. It is automatically passed with a function call
+from an object.
+harry.getSalary() # here self is harry
+
+# equivalent to Employee.getSalary(harry)
+The function getSalary() is defined as:
+class Employee:
+company = "Google"
+def getSalary(self):
+print("Salary is not there")
+
+
+
+STATIC METHOD
+Sometimes we need a function that does not use the self-parameter. We can define a
+static method like this:
+@staticmethod # decorator to mark greet as a static method
+def greet():
+print("Hello user")
+Now we can call it using the class name:
+"""
