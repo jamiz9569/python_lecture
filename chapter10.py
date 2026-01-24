@@ -10,7 +10,7 @@ It is based on several key concepts including classes, objects, inheritance, enc
 # Defining a class
 class Dog:
     # Constructor
-    def __init__(self, name, age):
+    def __init__(self, name, age): #__init__ is used to initialize the object attributes 
         self.name = name  # Attribute
         self.age = age    # Attribute
 
