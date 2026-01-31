@@ -18,7 +18,7 @@ It takes ‘self’ argument and can also take further arguments
 class Dog:
     # Constructor
     def __init__(self, name, age): #__init__ is used to initialize the object attributes 
-        self.name = name  # Attribute
+        self.name = name  # Attribute  #self is used to refer to the current instance of the class
         self.age = age    # Attribute
 
     # Method
@@ -173,4 +173,5 @@ static method like this:
 def greet():
 print("Hello user")
 Now we can call it using the class name:
+
 """
