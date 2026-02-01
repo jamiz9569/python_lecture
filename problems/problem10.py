@@ -38,3 +38,24 @@ obj = Test()
 obj.a = 0  # creates an instance attribute
 print(Test.a)  # 5
 print(obj.a)   # 0
+
+#question 4
+
+class Train:
+    def __init__(self, name, seats, fare):
+        self.name = name
+        self.seats = seats
+        self.fare = fare
+
+    def book_ticket(self):
+        if self.seats > 0:
+            self.seats -= 1
+            print("Ticket booked")
+        else:
+            print("No seats available")
+
+    def get_status(self):
+        print(f"Seats available: {self.seats}")
+
+    def get_fare_info(self):
+        print(f"Fare: ₹{self.fare}")
