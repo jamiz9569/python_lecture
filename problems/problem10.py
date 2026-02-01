@@ -30,5 +30,11 @@ class square:
     print("Cube is:",s1.cube())
     print("Square root is:",s1.squareroot())
 
-    #question3
-    
+#question3
+class Test:
+    a = 5   # class attribute
+
+obj = Test()
+obj.a = 0  # creates an instance attribute
+print(Test.a)  # 5
+print(obj.a)   # 0
