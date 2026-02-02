@@ -59,3 +59,10 @@ class Train:
 
     def get_fare_info(self):
         print(f"Fare: ₹{self.fare}")
+
+
+train1 = Train("Express", 100, 500)
+train1.get_status()      # Seats available: 100
+train1.get_fare_info()   # Fare: ₹500
+train1.book_ticket()     # Ticket booked
+train1.get_status()      # Seats available: 99
